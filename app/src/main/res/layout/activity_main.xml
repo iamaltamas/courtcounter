@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/baskeball"
+        android:scaleType="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basketball tournament counting score "
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:padding="20dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    //Team A layout
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/Team_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3"
+        android:onClick="ScroeThreeadd"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_dark_background"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2"
+        android:onClick="ScroeTwoadd"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_dark_background"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:onClick="ScroeOneadd"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_dark_background"/>
+</LinearLayout>
+    //Team B Layout
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/Team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3"
+            android:onClick="Scroe_Three_team_b"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_dark_background"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2"
+            android:onClick="Scroe_Two_team_b"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_dark_background"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:onClick="Scroe_One_team_b"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_dark_background"/>
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:onClick="Score_restore"
+        android:layout_marginBottom="80dp"
+        >
+
+    </Button>
+
+</RelativeLayout>
